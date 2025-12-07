@@ -95,8 +95,8 @@ body {
 /* Hero Section */
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    color: var(--dark);
     display: flex;
     align-items: center;
     padding-top: 80px;
@@ -111,7 +111,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    background: radial-gradient(circle at 30% 50%, rgba(108, 99, 255, 0.05) 0%, transparent 50%);
 }
 
 .hero .container {
@@ -126,6 +126,7 @@ body {
     margin-bottom: 20px;
     line-height: 1.2;
     animation: fadeInUp 0.8s ease;
+    color: var(--dark);
 }
 
 .hero-content h2 {
@@ -133,8 +134,9 @@ body {
     font-weight: 400;
     max-width: 700px;
     margin: 0 auto 60px;
-    opacity: 0.95;
+    opacity: 0.85;
     animation: fadeInUp 0.8s ease 0.2s both;
+    color: var(--light-gray);
 }
 
 .hero-images {
@@ -351,6 +353,48 @@ body {
     font-size: 13px;
     font-weight: 600;
 }
+
+.tech-stack {
+    padding: 120px 0;
+    background: white;
+    text-align: center;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 20px;
+    background: var(--bg-light);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(108, 99, 255, 0.1);
+}
+
+.tech-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.tech-item p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
 
 .btn-github {
     display: inline-block;
@@ -592,6 +636,10 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .logos-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -629,5 +677,9 @@ body {
 
     .nav-link {
         font-size: 14px;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
     }
 }
