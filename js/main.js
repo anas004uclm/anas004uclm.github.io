@@ -128,15 +128,21 @@ skillCards.forEach(card => {
 });
 
 // Project cards flip on mobile (click/tap)
-if (window.innerWidth <= 768) {
+document.addEventListener('DOMContentLoaded', () => {
     const projectCards = document.querySelectorAll('.project-card');
-    projectCards.forEach(card => {
-        card.addEventListener('click', function() {
-            this.classList.toggle('flipped');
+    
+    // En móvil, hacer flip con click
+    if (window.innerWidth <= 768) {
+        projectCards.forEach(card => {
+            card.addEventListener('click', function(e) {
+                e.preventDefault();
+                this.classList.toggle('flipped');
+            });
         });
-    });
-}
+    }
+});
 
 // Console message
 console.log('%c¡Hola! 👋', 'font-size: 24px; font-weight: bold; color: #6C63FF;');
 console.log('%c¿Interesado en el código? Échale un vistazo en GitHub: https://github.com/anas004uclm', 'font-size: 14px; color: #718096;');
+
