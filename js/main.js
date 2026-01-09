@@ -140,6 +140,23 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Contact form toggle
+    const formToggle = document.getElementById('formToggle');
+    const contactForm = document.getElementById('contactForm');
+    const formClose = document.getElementById('formClose');
+
+    if (formToggle) {
+        formToggle.addEventListener('click', () => {
+            contactForm.classList.toggle('hidden');
+        });
+    }
+
+    if (formClose) {
+        formClose.addEventListener('click', () => {
+            contactForm.classList.add('hidden');
+        });
+    }
 });
 
 // Console message

@@ -355,8 +355,37 @@
     <section class="cta" id="contact">
         <div class="container">
             <h2 class="section-title white">¿Interesado en colaborar conmigo?</h2>
-            <p class="cta-text">Siempre estoy abierto a discutir oportunidades de prácticas o proyectos interesantes.</p>
-            <a href="mailto:anas.elouahabi@alu.uclm.es" class="btn-cta">Empecemos una conversación</a>
+            <p class="cta-text">Siempre estoy abierto a discutir oportunidades de prácticas, proyectos interesantes o simplemente charlar sobre tecnología.</p>
+            
+            <div class="contact-options">
+                <a href="mailto:anas.elouahabi@alu.uclm.es" class="btn-cta btn-email">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://linkedin.com/in/anas-el-ouahabi" target="_blank" class="btn-cta btn-linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/anas004uclm" target="_blank" class="btn-cta btn-github-btn">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+
+            <div class="contact-divider">
+                <span>O</span>
+            </div>
+
+            <button class="btn-form-toggle" id="formToggle">Envíame un mensaje</button>
+
+            <!-- Contact Form -->
+            <form class="contact-form hidden" id="contactForm" action="https://formspree.io/f/meeejegv" method="POST">
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Tu email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="¿Por qué quieres contactarme? Cuéntame sobre ti o tu proyecto..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar mensaje</button>
+                <button type="button" class="btn-close-form" id="formClose">Cancelar</button>
+            </form>
         </div>
     </section>
 
