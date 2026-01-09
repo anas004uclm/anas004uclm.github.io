@@ -53,30 +53,17 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-weight: 800;
-    font-size: 24px;
-    color: var(--primary);
     transition: transform 0.3s ease;
 }
 
-#navbar .logo-text {
-    display: block;
-    position: relative;
-}
-
-#navbar .logo-text::before {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: var(--primary);
-    border-radius: 2px;
+#navbar .logo-img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
 }
 
 #navbar .logo:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .nav-links {
@@ -256,6 +243,16 @@ body {
     background: var(--bg-light);
 }
 
+.skills .section-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: var(--light-gray);
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -297,12 +294,14 @@ body {
     font-size: 24px;
     margin-bottom: 15px;
     color: var(--dark);
+    font-weight: 700;
 }
 
-.skill-card > p {
+.skill-intro {
     color: var(--light-gray);
     margin-bottom: 25px;
     line-height: 1.7;
+    font-size: 15px;
 }
 
 .skill-card h4 {
@@ -319,12 +318,14 @@ body {
     color: var(--dark);
     font-weight: 600;
     margin-bottom: 15px;
+    font-size: 15px;
 }
 
 .skill-list {
     list-style: none;
     color: var(--light-gray);
     line-height: 2;
+    font-size: 15px;
 }
 
 /* Projects Section */
