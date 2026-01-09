@@ -681,23 +681,17 @@ body {
 }
 
 .contact-divider {
-    margin: 40px 0;
+    margin: 50px 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
     position: relative;
-}
-
-.contact-divider span {
-    background: linear-gradient(135deg, var(--primary) 0%, #5a52d5 100%);
-    padding: 0 20px;
-    color: white;
-    font-weight: 600;
-    font-size: 16px;
 }
 
 .btn-form-toggle {
     padding: 14px 35px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
     color: white;
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     font-weight: 600;
     font-size: 16px;
@@ -708,7 +702,9 @@ body {
 .btn-form-toggle:hover {
     background: white;
     color: var(--primary);
+    border-color: white;
     transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .contact-form {
